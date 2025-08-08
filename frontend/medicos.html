@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Pacientes</h1>
+
+    <form id="medicosForm">
+        <input type="hidden" id="medicosId">
+        <input type="text" id="" placeholder="" required>
+        <input type="email" id="" placeholder="" required>
+        <input type="text" id="" placeholder="" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th><th>Nombre</th><th>Email</th><th>Teléfono</th><th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="medicosTabla"></tbody>
+    </table>
+
+    <script src="./renderMedicos.js"></script>
+</body>
+</html>
