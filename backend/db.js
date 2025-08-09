@@ -3,7 +3,7 @@ import mysql from 'mysql2';
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',       // tu usuario de MySQL
-    password: 'Quintero.qwe*123',       // tu contraseña de MySQL
+    password: 'Qwe.123*',       // tu contraseña de MySQL
     database: 'CrudClinic'
 });
 

@@ -10,12 +10,10 @@ async function cargarMedicos() {
     data.forEach(c => {
         table.innerHTML += `
             <tr>
-                <td>${c.id_cliente}</td>
-                <td>${c.nombre}</td>
-                <td>${c.email}</td>
-                <td>${c.telefono}</td>
+                <td>${c.id_medico}</td>
+                <td>${c.nombre_medico}</td>
                 <td>
-                    <button onclick="editarCliente(${c.id_cliente}, '${c.nombre}', '${c.email}', '${c.telefono}')">Editar</button>
+                    <button onclick="editarCliente(${c.id_medico}, '${c.nombre_medico}')">Editar</button>
                     <button onclick="eliminarCliente(${c.id_cliente})">Eliminar</button>
                 </td>
             </tr>
@@ -25,7 +23,7 @@ async function cargarMedicos() {
 
 form.addEventListener("submit", async e => {
     e.preventDefault();
-    const cliente = {
+    const medico = {
         nombre: document.getElementById("nombre").value,
         email: document.getElementById("email").value,
         telefono: document.getElementById("telefono").value
